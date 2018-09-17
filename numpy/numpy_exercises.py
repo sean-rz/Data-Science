@@ -52,7 +52,7 @@ print mat.sum()
 # Get the standard deviation of the values in mat
 print mat.std()
 
-# # Get the sum of all the columns in mat
+# Get the sum of all the columns in mat
 print mat.sum(axis=0)
 
 
