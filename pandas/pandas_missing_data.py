@@ -5,7 +5,7 @@ df = pd.DataFrame({'A':[1, 2, np.nan], 'B':[5,np.nan,np.nan], 'C':[1,2,3]})
 print df
 
 print df.dropna()
-print df.dropna(axis=1)
+print df.dropna(axis=1)   # drop columns with NaN
 print df.dropna(thresh=2) # at least two non-NaN
 
 print df.fillna(value='FILL VALUE') 
