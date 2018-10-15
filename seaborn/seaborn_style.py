@@ -15,10 +15,10 @@ sns.despine() # Spine Removal
 # sns.despine(left=True)
 
 '''
-matplotlib plt.figure(figsize=(width,height) * to change the size of 
-most seaborn plots.
+matplotlib plt.figure(figsize=(width,height) to change the size of 
+most seaborn plots
 You can control the size and aspect ratio of most seaborn grid plots 
-by passing in parameters: size, and aspect
+by passing in parameters: size and aspect
 '''
 # Non Grid Plot
 plt.figure(figsize=(12,3))
