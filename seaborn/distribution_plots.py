@@ -9,7 +9,7 @@ mpl.rcParams['patch.force_edgecolor'] = True  # gridlines between bins
 
 tips = sns.load_dataset('tips')
 print tips.head()
-'''
+
 ########################################################################
 # distplot: shows the distribution of a univariate set of observations.
 ########################################################################
@@ -82,9 +82,7 @@ for data_point in dataset:
     plt.plot(x_axis,kernel,color = 'grey',alpha=0.5)
 
 plt.ylim(0,1)
-'''
 
-'''
 # To get the kde plot we can sum these basis functions.
 # Plot the sum of the basis function
 sum_of_kde = np.sum(kernel_list,axis=0)
@@ -100,16 +98,13 @@ plt.yticks([])
 
 # Set title
 plt.suptitle("Sum of the Basis Functions")
-'''
+
+
 
 sns.kdeplot(tips['total_bill'])
 sns.rugplot(tips['total_bill'])
 
+sns.kdeplot(tips['tip'])
+sns.rugplot(tips['tip'])
+
 plt.show()
-
-
-
-
-
-
-
