@@ -40,6 +40,7 @@ print tips.head()
 
 g = sns.FacetGrid(tips, col="time", row="smoker") # Just the Grid
 g = g.map(plt.hist, "total_bill")
+# g = g.map(sns.distplot, 'total_bill')
 
 
 g = sns.FacetGrid(tips, col="time",  row="smoker",hue='sex')
