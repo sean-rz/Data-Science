@@ -83,6 +83,7 @@ plt.tight_layout()
 # Heatmap: restructure the dataframe so that columns become the Hours (x-axis) and the Index becomes the Day of the Week (y-axis)
 
 dayHour = df.groupby(by=['Day of Week','Hour']).count()['Reason'].unstack()
+# dayHour = pd.pivot_table(df, values='e', index='Day of Week', columns='Hour', aggfunc=sum)
 
 plt.figure(figsize=(12,6))
 sns.heatmap(dayHour,cmap='viridis')
